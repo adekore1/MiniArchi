@@ -1,0 +1,121 @@
+# 🏛️ MiniArchi – Your AI Architectural Assistant
+
+**MiniArchi** is a sleek, intelligent web app that lets anyone — architects, designers, students, or curious builders — chat with a GPT-4o-powered AI trained to think like a world-class architect. Whether you’re dreaming up a tiny cabin or a mega-structure, MiniArchi is here to inspire, guide, and problem-solve with you.
+
+🌐 [Try it out (coming soon)](https://miniarchi.vercel.app) — No sign-up required.
+
+---
+
+## ✨ What It Does
+
+- 🤖 Ask architectural questions and get instant, thoughtful answers
+- 🧠 Explore creative design solutions and technical calculations
+- 🏗️ Get help with building layouts, materials, and space planning
+- 📐 Speak naturally — the AI is eloquent, thorough, and realistic
+- 🌍 Designed to resonate with global users, especially Africans
+
+---
+
+## 🧠 Powered By
+
+- GPT-4o via OpenAI API  
+- Custom system prompt to shape the architect’s personality  
+- Next.js App Router + React  
+- Tailwind CSS + Framer Motion  
+- Serverless architecture for low-latency response  
+
+---
+
+## 🛠️ How It Works
+
+This app is built using the modern **Next.js App Router** and streams responses from OpenAI’s GPT-4o using Vercel’s `ai` SDK.
+
+🧠 The AI behaves like a legendary architect, thanks to a carefully crafted personality prompt:
+> “You are a professional architect — the best in the world. You speak eloquently, design boldly, explain deeply, and always promote creativity within engineering limits. You communicate accessibly to Africans and the world.”
+
+---
+
+## 📁 Project Structure
+
+MiniArchi/
+├── app/ # Next.js App Router
+│ ├── page.tsx # Landing page
+│ └── api/chat/ # AI chatbot API route
+│ └── route.ts
+├── components/ # Chat UI and other reusable components
+│ └── ChatComponent.tsx
+├── public/ # Static assets
+├── styles/ # Tailwind & global styles
+├── .env.local # API key (not included in repo)
+├── README.md
+└── next.config.js
+
+yaml
+Copy code
+
+---
+
+## 🚀 Getting Started Locally
+
+If you want to run this project locally:
+
+```bash
+git clone https://github.com/adekore1/miniarchi.git
+cd miniarchi
+npm install
+Then, add your OpenAI key in .env.local:
+
+ini
+Copy code
+OPENAI_API_KEY=your-api-key-here
+Start the dev server:
+
+bash
+Copy code
+npm run dev
+Visit http://localhost:3000 in your browser.
+
+🌍 Deploying to the Web
+The app is designed for one-click deployment on Vercel:
+
+Fork or clone this repo
+
+Push to your GitHub
+
+Import into Vercel
+
+Set OPENAI_API_KEY in your Vercel environment variables
+
+Deploy and share your live site
+
+🧪 Live Preview (Coming Soon)
+We're working on a hosted version for you to try instantly.
+
+Stay tuned at: miniarchi.vercel.app
+
+🤝 Contributing
+Want to suggest features or help improve the project? Contributions welcome!
+
+bash
+Copy code
+git checkout -b your-feature
+git commit -m "Added new feature"
+git push origin your-feature
+Then open a pull request 🎉
+
+📄 License
+This project is released under the MIT License.
+
+✍🏾 Built By
+Adekore Olurotimi Balogun — Nigerian developer, designer, and dreamer.
+
+Follow for updates: GitHub @adekore1
+
+❤️ Acknowledgements
+Made with ❤️ for:
+
+Future-focused architects
+
+Bold thinkers
+
+Builders across Africa and beyond
