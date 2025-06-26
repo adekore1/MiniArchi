@@ -84,15 +84,8 @@ export default function ChatComponent() {
                   : "mr-auto bg-neutral-200 dark:bg-neutral-700 text-black dark:text-white shadow-lg rounded-bl-sm"
               )}
             >
-              {isImage ? (
-                <img
-                  src={m.content}
-                  alt="AI Generated"
-                  className="rounded-lg max-w-xs border border-gray-300 dark:border-neutral-600 shadow-md"
-                />
-              ) : (
-                m.content
-              )}
+                {m.content}
+              
             </div>
           );
         })}
