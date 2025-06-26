@@ -23,38 +23,7 @@ export default function ChatComponent() {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  // HANDLE IMAGE GEN
-  const handleGenerateImage = async () => {
-    if (!input.trim()) return;
-
-    try {
-      const res = await fetch("/api/generateImage", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ prompt: input }),
-      });
-
-      const data = await res.json();
-
-      if (data.imageUrl) {
-        const imageMessage = {
-          id: Date.now().toString(),
-          role: "assistant" as const,
-          content: data.imageUrl,
-        };
-        await append({
-          id: Date.now().toString(),
-          role: "assistant",
-          content: data.imageUrl,
-        });
-      } else {
-        alert("Image generation failed.");
-      }
-    } catch (err) {
-      console.error("Image error:", err);
-      alert("Something went wrong generating the image.");
-    }
-  };
+// IMMAGE GEN TO BE ADDED
 
   return (
     <div className=" h-screen flex flex-col bg-neutral-100 dark:bg-neutral-900 text-neutral-800 dark:text-neutral-100 px-4 py-6">
@@ -71,10 +40,7 @@ export default function ChatComponent() {
 
       {/* Chat message area */}
       <div className=" shadow-xl flex-1 overflow-y-auto space-y-3 rounded-xl p-4 bg-gray-100 dark:bg-neutral-800/60 border dark:border-neutral-700 backdrop-blur-sm">
-        {messages.map((m, i) => {
-          const isImage = m.content.startsWith("http");
-
-          return (
+        {messages.map((m, i) => (
             <div
               key={i}
               className={clsx(
@@ -87,8 +53,7 @@ export default function ChatComponent() {
                 {m.content}
               
             </div>
-          );
-        })}
+        ))}
 
         <div ref={bottomRef} />
       </div>
