@@ -7,7 +7,7 @@ MiniArchi is a web-based AI assistant designed to help architects, builders, and
 
 ## 🚀 Live Demo
 
-👉 [Visit MiniArchi on Vercel](https://mini-archi.vercel.app/chat)
+👉 [Visit MiniArchi on Vercel](https://mini-archi.vercel.app/)
 
 ## ✨ Features
 
