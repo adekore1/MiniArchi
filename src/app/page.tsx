@@ -63,7 +63,7 @@ export default function LandingPage() {
         animate={{ opacity: 1, x:0, y: 0 }}
         transition={{ delay: 0.3, duration: 0.7 }}
       >
-        Also play with the screen by clicking on it and moving around lol, i just think it&#39s cool
+        Also play with the screen by clicking on it and moving around lol, i just think it is cool
       </motion.p>
 
       <footer className="absolute bottom-4 text-sm text-neutral-500">
