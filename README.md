@@ -28,4 +28,41 @@ MiniArchi is a web-based AI assistant designed to help architects, builders, and
 - **tsParticles**
 
 ## 📁 Project Structure
+app/
+├── components/
+│ └── ChatComponent.tsx # Main chat interface
+│ └── DotParticles.tsx # Animated background
+├── page.tsx # Landing page
+├── chat/page.tsx # Chat page
+public/
+├── icon.png # Custom logo
 
+bash
+Copy
+Edit
+
+## ⚙️ Setup
+
+```bash
+git clone https://github.com/yourusername/miniarchi.git
+cd miniarchi
+npm install
+Create a .env.local file:
+
+env
+Copy
+Edit
+OPENAI_API_KEY=your-api-key-here
+Then run the app:
+
+bash
+Copy
+Edit
+npm run dev
+📦 Deployment
+Deployed via Vercel. Push to main and Vercel handles the rest.
+
+📸 Screenshots
+<img src="public/screenshot.png" width="600" alt="MiniArchi screenshot">
+🧠 Inspiration
+This project aims to make architectural ideation easier and more accessible. MiniArchi encourages creativity, realism, and inclusive design.
