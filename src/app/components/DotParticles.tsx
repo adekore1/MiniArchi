@@ -15,7 +15,7 @@ export default function DotParticlesBg() {
   }, []);
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log("✅ Particles loaded", container);
+    console.log("Particles loaded", container);
   };
 
   const options: ISourceOptions = useMemo(() => ({
