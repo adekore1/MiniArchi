@@ -11,7 +11,6 @@ export default function ChatComponent() {
     handleInputChange,
     handleSubmit,
     isLoading,
-    append,
   } = useChat({
     api: "/api/chat",
     onFinish: (msg) => console.log("🟢 onFinish callback:", msg),
